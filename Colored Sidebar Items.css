@@ -17,21 +17,21 @@ customization. Just swap out the color variable names in the prefix groups.
   /* ================================ Colors ================================ */
   --red: #e22c3c;                /* Default Prefix: None */
   --red-orange: #e9404b;         /* Default Prefix: None */
-  --orange: #ee6748;             /* Default Prefix: 80 */
+  --orange: #ee6748;             /* Default Prefix: SOURCES */
   --amber: #fa9f50;              /* Default Prefix: None */
-  --yellow: #ffd85e;             /* Default Prefix: None */
+  --yellow: #ffd85e;             /* Default Prefix: SPACES */
   --lime: #97e768;               /* Default Prefix: None */
   --mint: #52eea3;               /* Default Prefix: 00 */
-  --cyan: #51e1e9;               /* Default Prefix: 10 */
+  --cyan: #51e1e9;               /* Default Prefix: ATLAS */
   --cool-cyan: #43cfea;          /* Default Prefix: None */
   --light-blue: #54b6f8;         /* Default Prefix: 20 */
-  --blue: #437cf3;               /* Default Prefix: 30 */
+  --blue: #437cf3;               /* Default Prefix: CALENDAR */
   --blue-violet: #6f51f4;        /* Default Prefix: None */
-  --violet: #9446f8;             /* Default Prefix: 40 */
+  --violet: #9446f8;             /* Default Prefix: CARDS */
   --purple: #c952ed;             /* Default Prefix: 50 */
-  --magenta: #e54f9b;            /* Default Prefix: 60 */
+  --magenta: #e54f9b;            /* Default Prefix: EXTRAS */
   --hot-red: #e3365e;            /* Default Prefix: 70 */
-  --cool-gray: #515768;          /* Default Prefix: 99 */
+  --cool-gray: #515768;          /* Default Prefix: .blog */
 
   --default-text-color: #d0d0d0;
   --highlight: #fff;
@@ -154,8 +154,8 @@ these to suit your own folder structure and vault theme!
   );
 }
 
-/* ------------------------------- 10 Prefix -------------------------------- */
-.nav-folder-title[data-path^="10"] {
+/* ------------------------------- ATLAS Prefix -------------------------------- */
+.nav-folder-title[data-path^="ATLAS"] {
   color: var(--cyan);
   --nav-item-color-hover: color-mix(
     in srgb,
@@ -174,14 +174,14 @@ these to suit your own folder structure and vault theme!
   );
   --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, transparent);
 }
-.nav-folder-title[data-path^="10"]:hover {
+.nav-folder-title[data-path^="ATLAS"]:hover {
   --nav-collapse-icon-color: color-mix(
     in srgb,
     var(--cyan) 60%,
     var(--contrast-color)
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="10"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="ATLAS"]) {
   --nav-indentation-guide-color: color-mix(
     in srgb,
     var(--cyan) var(--medium-contrast-amount),
@@ -189,7 +189,7 @@ these to suit your own folder structure and vault theme!
   );
 }
 .tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="10"])
+  .nav-folder:has(.nav-folder-title[data-path^="ATLAS"])
   .nav-file-title {
   color: color-mix(
     in srgb,
@@ -278,8 +278,8 @@ these to suit your own folder structure and vault theme!
   );
 }
 
-/* ------------------------------- 30 Prefix -------------------------------- */
-.nav-folder-title[data-path^="30"] {
+/* ------------------------------- CALENDAR Prefix -------------------------------- */
+.nav-folder-title[data-path^="CALENDAR"] {
   color: var(--blue);
   --nav-item-color-hover: color-mix(
     in srgb,
@@ -298,14 +298,14 @@ these to suit your own folder structure and vault theme!
   );
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, transparent);
 }
-.nav-folder-title[data-path^="30"]:hover {
+.nav-folder-title[data-path^="CALENDAR"]:hover {
   --nav-collapse-icon-color: color-mix(
     in srgb,
     var(--blue) 60%,
     var(--contrast-color)
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="30"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="CALENDAR"]) {
   --nav-indentation-guide-color: color-mix(
     in srgb,
     var(--blue) var(--medium-contrast-amount),
@@ -313,7 +313,7 @@ these to suit your own folder structure and vault theme!
   );
 }
 .tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="30"])
+  .nav-folder:has(.nav-folder-title[data-path^="CALENDAR"])
   .nav-file-title {
   color: color-mix(
     in srgb,
@@ -338,8 +338,8 @@ these to suit your own folder structure and vault theme!
   );
 }
 
-/* ------------------------------- 40 Prefix -------------------------------- */
-.nav-folder-title[data-path^="40"] {
+/* ------------------------------- CARDS Prefix -------------------------------- */
+.nav-folder-title[data-path^="CARDS"] {
   color: var(--violet);
   --nav-item-color-hover: color-mix(
     in srgb,
@@ -358,14 +358,14 @@ these to suit your own folder structure and vault theme!
   );
   --nav-collapse-icon-color: color-mix(in srgb, var(--violet) 60%, transparent);
 }
-.nav-folder-title[data-path^="40"]:hover {
+.nav-folder-title[data-path^="CARDS"]:hover {
   --nav-collapse-icon-color: color-mix(
     in srgb,
     var(--violet) 60%,
     var(--contrast-color)
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="40"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="CARDS"]) {
   --nav-indentation-guide-color: color-mix(
     in srgb,
     var(--violet) var(--medium-contrast-amount),
@@ -373,7 +373,7 @@ these to suit your own folder structure and vault theme!
   );
 }
 .tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="40"])
+  .nav-folder:has(.nav-folder-title[data-path^="CARDS"])
   .nav-file-title {
   color: color-mix(
     in srgb,
@@ -458,8 +458,8 @@ these to suit your own folder structure and vault theme!
   );
 }
 
-/* ------------------------------- 60 Prefix -------------------------------- */
-.nav-folder-title[data-path^="60"] {
+/* ------------------------------- EXTRA Prefix -------------------------------- */
+.nav-folder-title[data-path^="EXTRA"] {
   color: var(--magenta);
   --nav-item-color-hover: color-mix(
     in srgb,
@@ -482,14 +482,14 @@ these to suit your own folder structure and vault theme!
     transparent
   );
 }
-.nav-folder-title[data-path^="60"]:hover {
+.nav-folder-title[data-path^="EXTRA"]:hover {
   --nav-collapse-icon-color: color-mix(
     in srgb,
     var(--magenta) 60%,
     var(--contrast-color)
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="60"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="EXTRA"]) {
   --nav-indentation-guide-color: color-mix(
     in srgb,
     var(--magenta) var(--medium-contrast-amount),
@@ -497,7 +497,7 @@ these to suit your own folder structure and vault theme!
   );
 }
 .tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="60"])
+  .nav-folder:has(.nav-folder-title[data-path^="EXTRA"])
   .nav-file-title {
   color: color-mix(
     in srgb,
@@ -586,8 +586,8 @@ these to suit your own folder structure and vault theme!
   );
 }
 
-/* ------------------------------- 80 Prefix -------------------------------- */
-.nav-folder-title[data-path^="80"] {
+/* ------------------------------- SOURCES Prefix -------------------------------- */
+.nav-folder-title[data-path^="SOURCES"] {
   color: var(--orange);
   --nav-item-color-hover: color-mix(
     in srgb,
@@ -610,14 +610,14 @@ these to suit your own folder structure and vault theme!
     transparent
   );
 }
-.nav-folder-title[data-path^="80"]:hover {
+.nav-folder-title[data-path^="SOURCES"]:hover {
   --nav-collapse-icon-color: color-mix(
     in srgb,
     var(--orange) 60%,
     var(--contrast-color)
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="80"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="SOURCES"]) {
   --nav-indentation-guide-color: color-mix(
     in srgb,
     var(--orange) var(--medium-contrast-amount),
@@ -625,7 +625,7 @@ these to suit your own folder structure and vault theme!
   );
 }
 .tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="80"])
+  .nav-folder:has(.nav-folder-title[data-path^="SOURCES"])
   .nav-file-title {
   color: color-mix(
     in srgb,
@@ -650,8 +650,74 @@ these to suit your own folder structure and vault theme!
   );
 }
 
-/* ------------------------------- 99 Prefix -------------------------------- */
-.nav-folder-title[data-path^="99"] {
+
+/* ------------------------------- SPACES Prefix -------------------------------- */
+.nav-folder-title[data-path^="SPACES"] {
+  color: var(--yellow);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--yellow) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--yellow) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--yellow) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--yellow) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="SPACES"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--yellow) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="SPACES"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--yellow) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="SPACES"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--yellow) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--yellow) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--yellow) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--yellow) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+
+/* ------------------------------- .blog Prefix -------------------------------- */
+.nav-folder-title[data-path^=".blog"] {
   color: var(--cool-gray);
   --nav-item-color-hover: color-mix(
     in srgb,
@@ -674,14 +740,14 @@ these to suit your own folder structure and vault theme!
     transparent
   );
 }
-.nav-folder-title[data-path^="99"]:hover {
+.nav-folder-title[data-path^=".blog"]:hover {
   --nav-collapse-icon-color: color-mix(
     in srgb,
     var(--cool-gray) 60%,
     var(--contrast-color)
   );
 }
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) {
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^=".blog"]) {
   --nav-indentation-guide-color: color-mix(
     in srgb,
     var(--cool-gray) var(--medium-contrast-amount),
@@ -689,7 +755,7 @@ these to suit your own folder structure and vault theme!
   );
 }
 .tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="99"])
+  .nav-folder:has(.nav-folder-title[data-path^=".blog"])
   .nav-file-title {
   color: color-mix(
     in srgb,

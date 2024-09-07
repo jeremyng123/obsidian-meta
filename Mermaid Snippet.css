@@ -1,0 +1,80 @@
+/*mermaid*/
+
+svg[id^="m"][width][height][viewBox] {
+    max-width: 100%;
+    /*max-height: 50%;*/
+    height: 250px;
+}
+
+div.mermaid {
+    margin-left: 0 !important;
+    text-align: center;
+    resize:auto;
+    /*overflow:auto;*/
+    margin-bottom: 2px;
+    position:relative;
+    /*max-height: 600px;*/
+    max-width: 100%;
+}
+
+div.mermaid::after {
+    content:'';
+    display:block;
+    width:10px;
+    height:10px;
+    background-color:yellowgreen;
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+.mermaid svg {
+	max-width: 100%;
+	height: auto;
+}
+
+body.theme-light .mermaid .cluster rect
+{
+	stroke-width: 1px !important;
+	stroke: var(--color-base-60) !important;
+	fill: var(--color-base-05) !important;
+} 
+body.theme-light .mermaid .node * {
+	stroke-width: 1px !important;
+	stroke: var(--color-base-60) !important;
+	fill: var(--color-base-25) !important;
+}
+body.theme-dark .mermaid .edgeLabel {
+	background-color: var(--color-base-05) !important;
+}
+
+
+body.theme-dark .mermaid .cluster rect
+{
+	stroke-width: 1px !important;
+	stroke: white !important;
+	fill: white !important;
+} 
+
+/* big nodes */
+body.theme-dark .mermaid .node * {
+	stroke-width: 1px !important;
+	stroke: white !important;
+	fill: magenta !important;
+}
+
+body.theme-dark .mermaid .edgeLabel {
+	background-color: grey !important;
+}
+
+body.theme-dark .mermaid .arrowheadPath {
+	background-color: white !important;
+	fill: magenta !important;
+	stroke: white !important;
+}
+
+body.theme-dark .mermaid .arrowhead {
+	background-color: white !important;
+	fill: white !important;
+	stroke: white !important;
+}
